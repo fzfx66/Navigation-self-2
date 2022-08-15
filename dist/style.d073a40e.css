@@ -279,3 +279,46 @@ body {
     font-size: 16px;
     margin-top: 4px;
 }
+
+/*响应式*/
+@media (max-width: 500px) {
+    .globalAside{
+        display:none;
+    }
+    /*.globalAside > .weather {*/
+    /*    display:none;*/
+    /*}*/
+    /*.globalAside > .Aside3 {*/
+    /*    display:none;*/
+    /*}*/
+    /*.globalAside > .container_menu{*/
+    /*    display:none;*/
+    /*}*/
+    /*.globalAside{*/
+    /*    flex-direction: column;*/
+    /*    width:100px;*/
+    /*}*/
+    /*.globalAside > .time_Weather{*/
+    /*    width:100px;*/
+    /*}*/
+    /*.globalRight{*/
+    /*    width:400px;*/
+    /*}*/
+    .globalHeader{
+        width:600px;
+    }
+    .globalHeader > .searchForm{
+        width:70%;
+    }
+    .globalRight > .globalMain > .siteList .site .close{
+        display:block;
+    }
+    body {
+        /*background: #c6dfc8;*/
+        background: url("jing.684a760d.jpeg") no-repeat center;
+        background-size: cover;
+        min-height:100vh;
+        min-width:100vm;
+        overflow: hidden;
+    }
+}

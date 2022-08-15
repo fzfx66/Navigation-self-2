@@ -1,0 +1,281 @@
+* {box-sizing: border-box;}
+*:before, *:after {box-sizing: border-box}
+* {margin: 0;padding: 0}
+ul, ol {list-style: none;}
+/*a{color:inherit;text-decoration: none;}*/
+img {max-width: 100%}
+
+body {
+    /*background: #c6dfc8;*/
+    background: url("back.456b26e8.jpg") no-repeat center;
+    background-size: cover;
+    min-height:100vh;
+    min-width:100vm;
+    overflow: hidden;
+}
+.globalPage{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*背景设置为视频时：*/
+
+/*.fullScreenVideo {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    min-width: 50%;*/
+/*    min-height: 50%;*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    z-index: -100;*/
+/*    !*-webkit-transform: translateX(-50%) translateY(-50%);*!*/
+/*    transform: translateX(-50%) translateY(-50%);*/
+/*    -webkit-transition: 1s opacity;*/
+/*    transition: 1s opacity;*/
+/*}*/
+/*.videoContainer{*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    overflow: hidden;*/
+/*    z-index: -100;*/
+/*}*/
+/*.videoContainer:before{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: block;*/
+/*    z-index: -1;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    !*background: rgba(25,29,34,.65);*!*/
+/*}*/
+
+.downMenu{
+    width:50px;
+    height:110px;
+    margin-right: 20px;
+    margin-left: -40px;
+    justify-content: flex-end;
+}
+.downMenu > .downMenu_1{
+    display:block;
+    width:35px;
+    height:35px;
+}
+.downMenu > .downMenu_2{
+    margin-top:100px;
+    justify-content: space-between;
+    display:none;
+}
+.downMenu > .downMenu_2 > ul{
+    margin-bottom: -20px;
+    display:block;
+}
+.downMenu > .downMenu_2 > ul > li{
+    /*flex-direction: column;*/
+    width:30px;
+    height:30px;
+    margin-bottom:20px;
+    display: block;
+}
+/*鼠标移入，展现选项，同时增大区域长宽度防止消失；*/
+.downMenu:hover{
+    height:400px;
+}
+.downMenu:hover > .downMenu_2{
+    display:block;
+    backdrop-filter:saturate(150%) blur(4px);
+    -webkit-backdrop-filter:saturate(150%) blur(4px);
+    background-color:rgba(28,13,26,0.3);
+}
+
+.globalAside{
+    min-width: 340px;
+    margin: 35px 120px 0 120px;
+}
+.globalAside > .Aside{
+    color:white;
+    margin-top:20px;
+    height:212px;
+    backdrop-filter:saturate(150%) blur(4px);
+    -webkit-backdrop-filter:saturate(150%) blur(4px);
+    background-color:rgba(28,13,26,.2);
+}
+
+.globalAside .time_Weather > .localTime > #localTime{
+    /*display: block;*/
+    background: none;
+    border: none;
+    /*input标签点击时不出现边框*/
+    outline: none;
+    color:white;
+    font-size: 45px;
+}
+.globalAside .time_Weather > .localTime{
+    padding-left: 15px;
+}
+.globalAside .time_Weather .date > #date{
+    background: none;
+    border: none;
+    outline: none;
+    color:white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+.globalAside .time_Weather .line {
+    margin-top: 10px;
+    height:1px;
+    background: #80808080;
+}
+.globalAside > .container_menu > .menu button{
+    width:30px;
+    height: 20px;
+}
+/*.globalAside > .container_menu {*/
+/*    border:1px solid blue;*/
+/*    min-width:330px;*/
+/*}*/
+/*.globalAside > .menu{*/
+/*!*menu start*!*/
+/*width:200px;background:#fff;display:none;position:absolute;left:0;top:0;z-index:1;*/
+/*}*/
+
+
+
+.globalRight{
+    /*outline:1px solid red;*/
+    min-width: 1000px;
+    margin: 35px 120px 0 auto;
+}
+
+.globalRight > .globalHeader{
+    margin-top:40px;
+    margin-bottom:50px;
+}
+.globalRight > .globalHeader > .searchForm{
+        display: flex;
+        justify-content: space-between;
+}
+.globalRight > .globalHeader >.searchForm > input {
+    width: 100%;
+    margin-right: -3px;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.globalRight > .globalHeader >.searchForm > button {
+    border: none;
+    white-space: nowrap;
+    padding: 0 26px;
+    background: #2090CF;
+    color: white;
+    font-size: 16px;
+}
+
+.globalRight > .globalSort{
+    display:flex;
+    justify-content: space-between;
+    margin:30px 0;
+    background: #eeeeee80;
+}
+
+.globalRight > .globalSort > ul{
+    width: 100%;
+    display:flex;
+    margin:10px 25px;
+    justify-content: space-between;
+}
+.globalRight > .globalSort > ul > li{
+    background: #ffffffF2;
+    padding: 10px 33px;
+    display: block;
+    width: 100px;
+    height: 41px;
+    font-size: 16px;
+}
+.globalRight > .globalSort > ul > li:hover{
+    background: #2090CF;
+    color:white;
+}
+.globalRight > .globalSort > .killWall{
+    border:1px solid #22222280;
+    width: 27px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 19px;
+    background: rgb(0,128,0);
+    background: radial-gradient(circle, rgba(0,128,0,1) 0%, rgba(0,128,0,1) 36%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 100%);
+}
+
+.globalRight > .globalMain{
+    display: flex;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.globalRight > .globalMain > .siteList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -36px;
+}
+.globalRight > .globalMain > .siteList .site {
+    /*border:1px solid pink;*/
+    width: 110px;
+    height: 100px;
+    background: #ffffff80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 36px;
+    border-radius: 4px;
+    padding: 15px 0;
+    position: relative;
+    /*!*鼠标移上变手形*!*/
+    cursor:pointer;
+}
+
+.globalRight > .globalMain > .siteList .site:hover {
+    background: #ffffff;
+}
+
+.globalRight > .globalMain > .siteList .site .logo {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+}
+.globalRight > .globalMain > .siteList .site .link {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.globalRight > .globalMain > .siteList .site .close{
+    position:absolute;
+    right:1px;
+    top:-10px;
+    font-size: 30px;
+    cursor:default;
+    display: none;
+}
+.globalRight > .globalMain > .siteList .site:hover .close{
+    display:block;
+}
+
+.globalRight > .globalMain > .siteList .addSite .icon {
+    width:64px;
+    height:64px;
+}
+.globalRight > .globalMain > .siteList .addSite .text{
+    font-size: 16px;
+    margin-top: 4px;
+}
